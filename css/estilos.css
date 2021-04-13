@@ -1,0 +1,26 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.contenido {
+  display: inline-block;
+  text-align: start;
+}
+
+meter,
+input[type=range],
+output {
+  display: block;
+}
+
+mi-footer {
+  text-align: center;
+  display: block;
+  margin: 1rem 0;
+  font-size: small;
+  background: grey;
+  width:100%;
+    height:auto;
+    
+}

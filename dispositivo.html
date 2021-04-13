@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width,      
+      initial-scale=1.0">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="shortcut icon" href="icono256.png" />
+      <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        button :hover{
+            background-color: rgb(193, 243, 250);
+          }
+        </style>
+      <title>
+      Simulación de Dispositivo
+      IoT
+    </title>
+    <link href="css/estilos.css"
+      rel="stylesheet">
+    <script type="module"
+      src="cmp/mi-footer.js">
+      </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-light" style="background: #ec008c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */">
+    <div class="contenido">
+      <h3 style="font-family: 'Lobster', cursive;">
+        Simulación de Dispositivo
+        IoT
+      </h3>
+    </div>
+    </nav>
+    <br>  
+    <p>
+        <center><a href="index.html"
+          target="_blank">
+          <button  type="button" style="width: 50%; background-color: #a9ff94;" class="btn btn-block"><i class="material-icons">&#xe62b;</i>Ver móvil.<i class="material-icons">&#xe62b;</i>
+          </button></a></center>          
+      </p>
+      <p>
+        <label>
+          Dispositivo
+          <output
+            id="ctDispositivo">
+          </output>
+        </label>
+      </p>
+      <p>
+        <label>
+          Entrada
+          <input id="ctEntrada"
+            type="range"
+            min="0" max="10">
+        </label>
+      </p>
+      <p>
+        <label>
+          <input id="ctSondea"
+            type="checkbox"
+            checked>
+          Sondea Salida
+        </label>
+      </p>
+      <p>
+        <label>
+          Salida
+          <output id="ctSalida">
+          </output>
+        </label>
+      </p>
+      <p>
+        <output id="iotError">
+        </output>
+      </p>
+      <mi-footer></mi-footer>
+    </div>
+    <script type="module"
+      src="disp/CtrlDispositivo.js">
+      </script>
+  </body>
+</html>
