@@ -1,4 +1,4 @@
 #memoorte.pwamemo.github.io
 Ejemplo de IoT con Firestore.
 
-https://pwamemo.github.io
+https://memoorte.github.io/pwamemo.github.io/
